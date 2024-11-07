@@ -1,4 +1,14 @@
 {
   "appName": "Bitbot",
-  "description": "Your Trading Bot as a service platform"
+  "description": "Your Trading Bot as a service platform",
+  "landingPage": {
+    "title": "BitBot",
+    "headline": "Here is a short and impacting description of what BitBot is all about.<br />Lorem ipsum dolor sit amet. I said lorem dolor sit ipsum amet boy.",
+    "steps": {
+      "first": "Sign In BitBot",
+      "second": "Plan Your Trades",
+      "third": "Trade The Plan"
+    },
+    "cta": "Continue"
+  }
 }
