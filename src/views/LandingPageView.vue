@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Button from '../components/controls/Button.vue'
+</script>
 
 <template>
   <main
@@ -12,11 +14,12 @@
       <img src="" class="text-xs" :alt="$t('landingPage.steps.third')" />
     </div>
     <div class="px-6 w-full">
-      <RouterLink
-        class="block text-center py-2 w-full rounded-2xl bg-amber-500 shadow-2xl"
+      <Button
+        variant="primary"
+        :text="$t('landingPage.cta')"
+        fit="parent"
         to="/login"
-        >{{ $t('landingPage.cta') }}</RouterLink
-      >
+      />
     </div>
   </main>
 </template>
