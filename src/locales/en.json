@@ -10,5 +10,19 @@
       "third": "Trade The Plan"
     },
     "cta": "Continue"
+  },
+  "loginPage": {
+    "title": "Sign In",
+    "headline": "Enter your email to start using BitBot",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "john.doe@gmail.com"
+      },
+      "ctas": {
+        "submit": "Start",
+        "cancel": "Go Back"
+      }
+    }
   }
 }
