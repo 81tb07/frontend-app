@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ButtonProps } from './types'
+import { type ButtonProps } from './types'
 
 const { text, variant, href, to, fit, isDisabled, ...otherProps } =
   defineProps<ButtonProps>()
@@ -29,7 +29,7 @@ const cssClasses = {
 
 <template>
   <a v-if="isLink" :href="href" :class="cssClasses">{{ text }}</a>
-  <RouterLink v-else-if="isRouterLink" :class="cssClasses" :to="to">{{
+  <RouterLink v-else-if="isRouterLink && to" :class="cssClasses" :to="to">{{
     text
   }}</RouterLink>
   <button v-else type="button" :disabled="isDisabled" :class="cssClasses">
