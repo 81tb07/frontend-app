@@ -4,35 +4,30 @@ import { type ButtonProps } from './types'
 const { text, variant, href, to, fit, isDisabled, ...otherProps } =
   defineProps<ButtonProps>()
 
-const isLink = !!href
-const isRouterLink = !!to
-
-// TODO Enrich this object when we'll support several size for the component
-const sizeDependentCssClasses = {
-  'py-2': true,
-  'rounded-2xl': true,
-}
-
-const secondaryVariant = {
-  'bg-white shadow-2xl border border-solid border-4 border-slate-900': true,
-}
-
 const cssClasses = {
-  'text-center block': true,
-  ...sizeDependentCssClasses,
+  'text-center block py-2 rounded-2xl': true,
   'w-full': fit === 'parent',
   'bg-amber-500': variant === 'primary',
-  ...(variant === 'secondary' ? secondaryVariant : {}),
-  'pointer-events-none': isLink && isDisabled,
+  'bg-white shadow-2xl border border-solid border-4 border-slate-900':
+    variant === 'secondary',
+  'pointer-events-none': !!href && isDisabled,
 }
 </script>
 
 <template>
-  <a v-if="isLink" :href="href" :class="cssClasses">{{ text }}</a>
-  <RouterLink v-else-if="isRouterLink && to" :class="cssClasses" :to="to">{{
+  <a v-if="href" :href="href" :class="cssClasses" v-bind="otherProps">{{
+    text
+  }}</a>
+  <RouterLink v-else-if="to" :class="cssClasses" :to="to" v-bind="otherProps">{{
     text
   }}</RouterLink>
-  <button v-else type="button" :disabled="isDisabled" :class="cssClasses">
+  <button
+    v-else
+    type="button"
+    :disabled="isDisabled"
+    :class="cssClasses"
+    v-bind="otherProps"
+  >
     {{ text }}
   </button>
 </template>
