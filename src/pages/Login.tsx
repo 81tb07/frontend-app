@@ -4,7 +4,7 @@ export const Login = () => {
   return (
     <main className="w-screen max-w-[600px] mx-auto h-screen px-8 flex flex-col items-start gap-6 content-stretch justify-center">
       <h1 className="text-3xl">Sign In</h1>
-      <p className="text-lg">Enter your email to start using BitBot</p>
+      <p className="text-lg">Enter your email to start using Bitbot</p>
       <div className="flex items-center justify-between w-full"></div>
       <div className="flex flex-col px-6 w-full gap-3">
         <NavLink
