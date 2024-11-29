@@ -1,4 +1,4 @@
-import { Button } from '../components/Button'
+import { Button } from '../components/Button';
 
 export const Home = () => {
   return (
@@ -18,5 +18,5 @@ export const Home = () => {
         <Button variant="primary" text="Continue" fit="parent" to="/login" />
       </div>
     </main>
-  )
-}
+  );
+};

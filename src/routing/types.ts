@@ -1,4 +1,4 @@
 export enum BitbotRoutes {
   HOME_PAGE = '/',
-  LOGIN_PAGE = '/login'
+  LOGIN_PAGE = '/login',
 }

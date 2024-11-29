@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router'
+import { NavLink } from 'react-router';
 
 export const Login = () => {
   return (
@@ -21,5 +21,5 @@ export const Login = () => {
         </NavLink>
       </div>
     </main>
-  )
-}
+  );
+};
