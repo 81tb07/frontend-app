@@ -1,0 +1,11 @@
+.primary {
+  @apply bg-amber-500;
+}
+
+.secondary {
+  @apply bg-white shadow-2xl border-solid border-4 border-slate-900;
+}
+
+.tertiary {
+  @apply underline;
+}

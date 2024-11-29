@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router';
 
-export const Login = () => {
+const Login = () => {
   return (
     <main className="w-screen max-w-[600px] mx-auto h-screen px-8 flex flex-col items-start gap-6 content-stretch justify-center">
       <h1 className="text-3xl">Sign In</h1>
@@ -23,3 +23,5 @@ export const Login = () => {
     </main>
   );
 };
+
+export default Login;
