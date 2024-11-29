@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
 import { BitbotRoutes } from './types';
-import { Home as HomePage } from '../pages/Home';
-import { Login as LoginPage } from '../pages/Login';
+import HomePage from '../pages/Home';
+import LoginPage from '../pages/Login';
 
 export const RoutesContainer = () => {
   return (
