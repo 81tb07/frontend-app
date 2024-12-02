@@ -1,6 +1,6 @@
-import { Button } from '../components/Button';
+import Button from '../components/Button';
 
-export const Home = () => {
+const Home = () => {
   return (
     <main className="w-screen max-w-[600px] mx-auto h-screen px-8 flex flex-col items-start gap-6 content-stretch justify-center">
       <h1 className="text-3xl">Bitbot</h1>
@@ -15,8 +15,10 @@ export const Home = () => {
         <img src="" className="text-xs" alt="Trade The Plan" />
       </div>
       <div className="px-6 w-full">
-        <Button variant="primary" text="Continue" fit="parent" to="/login" />
+        <Button variant="primary" text="Continue" to="/login" />
       </div>
     </main>
   );
 };
+
+export default Home;

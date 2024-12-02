@@ -46,7 +46,7 @@
     "vitest": "^2.1.5"
   },
   "lint-staged": {
-    "*.css": [
+    "*.{css,module.css}": [
       "stylelint --fix",
       "prettier --write"
     ],
