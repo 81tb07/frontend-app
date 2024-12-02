@@ -1,0 +1,28 @@
+{
+  "appName": "Bitbot",
+  "description": "Votre plateforme de bot de trading",
+  "landingPage": {
+    "title": "BitBot",
+    "headline": "Voici une description courte et impactante de ce que BitBot est.<br />Lorem ipsum dolor sit amet. J'ai dit lorem dolor sit ipsum amet maaan.",
+    "steps": {
+      "first": "Sign In BitBot",
+      "second": "Plan Your Trades",
+      "third": "Trade The Plan"
+    },
+    "cta": "Continuer"
+  },
+  "loginPage": {
+    "title": "Se Connecter",
+    "headline": "Entrez votre email pour commencer à utiliser BitBot",
+    "form": {
+      "email": {
+        "label": "Email",
+        "placeholder": "john.doe@gmail.com"
+      },
+      "ctas": {
+        "submit": "Commencer",
+        "cancel": "Retour"
+      }
+    }
+  }
+}
